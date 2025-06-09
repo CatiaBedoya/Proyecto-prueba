@@ -1,5 +1,7 @@
 SE GUARDAN LOS COMMIT SIEMPRE CON GIT STATUS y luego el GIT ADD . 
+después para pegar los cambios y que queden en un solo commit GET COMMIT -M "CAMBIOS GUARDADOS 1"
 
+al editar directamente en el archivo ejemplo este blog, dar en archivo guardar para asegurar
 
 git clase 1 (1 commit ósea cambio, se debe guardar con el comando en el bash here)
 2 cambio ( se guarda, siempre se guardan los cambios en bashhere)

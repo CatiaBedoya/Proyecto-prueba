@@ -8,3 +8,349 @@ git clase 1 (1 commit ósea cambio, se debe guardar con el comando en el bash he
 
 
 
+///// VOY A PEGAR TODOS LOS COMANDOS Y DOCUMENTACION PARA RECORDAR
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+CONFIGURAR EL NOMBRE DE USUARIO QUE TENGO EN GITHUB
+$ git config --global user.name "CatiaBedoya"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+CONFIGURAR NOMBRE
+$ git config --global user.namel "CatiaBedoya"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+CONFIGURAR NOMBRE
+$ git config --global ulkser.namel "CatiaBedoya"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+CONFIGURAR NOMBRE
+$ git config --global user.name "CatiaBedoya"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+CONFIGURAR EMAIL CON EL QUE ABRI GITHUB
+$ git config --global user.email "catiab7615@gmail.com"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+VERFICAR QUE SE LOGRO CONFIGURAR BIEN MI CUENTA DE GITHUB
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=schannel
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=CatiaBedoya
+user.namel=CatiaBedoya
+user.email=catiab7615@gmail.com
+ulkser.namel=CatiaBedoya
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub
+INICIAR EN MI PROYECTO
+$ git init
+Initialized empty Git repository in C:/Users/catia/OneDrive/Escritorio/PruebaGithub/.git/
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pruebagit.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   pruebagit.txt
+
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git commit -m "Inicio del proyecto1Prueba"
+[master (root-commit) 9567b5e] Inicio del proyecto1Prueba
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pruebagit.txt
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pruebagit.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pruebagit.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pruebagit.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mi firma.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   mi firma.jpg
+        modified:   pruebagit.txt
+
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git commit -m "subida archivo"
+[master 7d5f5e5] subida archivo
+ 2 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 mi firma.jpg
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pruebagit.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pruebagit.txt
+
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git commit -m "vers3"
+[master 5f15136] vers3
+ 1 file changed, 2 insertions(+)
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (master)
+$ git branch -M main
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git branch estudiante
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git checkout estudiante
+Switched to branch 'estudiante'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git commit -m "vrs4"
+[estudiante 5d6d86c] vrs4
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pruebaderamaestudiante.txt
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout main
+Switched to branch 'main'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git checkout estudiante
+Switched to branch 'estudiante'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout main
+Switched to branch 'main'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git remote add origin https://github.com/CatiaBedoya/Proyecto-prueba.git
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 9.27 KiB | 3.09 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/CatiaBedoya/Proyecto-prueba.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git push -u origin estudiante
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'estudiante' on GitHub by visiting:
+remote:      https://github.com/CatiaBedoya/Proyecto-prueba/pull/new/estudiante
+remote:
+To https://github.com/CatiaBedoya/Proyecto-prueba.git
+ * [new branch]      estudiante -> estudiante
+branch 'estudiante' set up to track 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 901 bytes | 225.00 KiB/s, done.
+From https://github.com/CatiaBedoya/Proyecto-prueba
+   5f15136..28698ba  main       -> origin/main
+Updating 5f15136..28698ba
+Fast-forward
+ pruebaderamaestudiante.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pruebaderamaestudiante.txt
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git branch estudiante2
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git checkout estudiante2
+Switched to branch 'estudiante2'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ git checkout estudiante
+Switched to branch 'estudiante'
+Your branch is up to date with 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout estudiante
+Already on 'estudiante'
+Your branch is up to date with 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+$ git checkout estudiante2
+Switched to branch 'estudiante2'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ git checkout estudiante
+A       Captura de pantalla 2025-03-05 144618.png
+Switched to branch 'estudiante'
+Your branch is up to date with 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git branch -d estudiante2
+error: the branch 'estudiante2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D estudiante2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git branch -d "estudiante2"
+error: the branch 'estudiante2' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D estudiante2'
+hint: Disable this message with "git config set advice.forceDeleteBranch false"
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout estudiante2
+A       Captura de pantalla 2025-03-05 144618.png
+Switched to branch 'estudiante2'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ ^C
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ git branch -D estudiante2
+error: cannot delete branch 'estudiante2' used by worktree at 'C:/Users/catia/OneDrive/Escritorio/PruebaGithub'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante2)
+$ git checkout estudiante
+A       Captura de pantalla 2025-03-05 144618.png
+Switched to branch 'estudiante'
+Your branch is up to date with 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git branch -D estudiante2
+Deleted branch estudiante2 (was 28698ba).
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git branch estudiante22
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+$ git checkout estudiante22
+Switched to branch 'estudiante22'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante22)
+SE AGREGA EL CAMBIO DE LA IMAGEN QUE SE GUARDO DIRECTAMENTE desde EL EXPLORER 
+$ git add .
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante22)
+GUARDA EL COMENTARIO Y CAMBIO DE LA IMAGEN EN LA RAMA 
+$ git commit -m "vrs 5 estudiante22"
+}[estudiante22 afc7330] vrs 5 estudiante22
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Captura de pantalla 2024-11-26 180018.png
+
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (main)
+PARA MOVERME ENTRE RAMAS, O PASAR DE UNA A OTRA
+$ git checkout estudiante
+Switched to branch 'estudiante'
+Your branch is up to date with 'origin/estudiante'.
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+PARA MOVERME ENTRE RAMAS, O PASAR DE UNA A OTRA
+$ git checkout estudiante22
+Switched to branch 'estudiante22'
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante22)
+PARA MOVERME ENTRE RAMAS, O PASAR DE UNA A OTRA
+$ git checkout estudiante
+
+
+catia@dulce MINGW64 ~/OneDrive/Escritorio/PruebaGithub (estudiante)
+GUARDAR EL CAMBIO DE HABER AGREGADO UNA NUEVA RAMA, CUANDO YA ESTABA EL PROYECTO SUBIDO EN REPOSITORIO 
+$ git push -u origin estudiante22
+
+
+

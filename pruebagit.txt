@@ -1,1 +1,8 @@
-git clase 1
+SE GUARDAN LOS COMMIT SIEMPRE CON GIT STATUS y luego el GIT ADD . 
+
+
+git clase 1 (1 commit ósea cambio, se debe guardar con el comando en el bash here)
+2 cambio ( se guarda, siempre se guardan los cambios en bashhere)
+
+
+
